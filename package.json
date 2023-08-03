@@ -41,7 +41,7 @@
     "android"
   ],
   "repository": "https://github.com/Mhp23/fast-base-icons",
-  "author": "mhp23 <hpousty@gmail.com> (https://github.com/Mhp23)",
+  "author": "mhp23 <business.mhpdev@gmail.com> (https://github.com/Mhp23)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Mhp23/fast-base-icons/issues"
@@ -69,6 +69,7 @@
     "react": "18.2.0",
     "react-native": "0.72.3",
     "react-native-builder-bob": "^0.20.0",
+    "react-native-svg": "^13.10.0",
     "release-it": "^15.0.0",
     "typescript": "^5.0.2"
   },
@@ -77,7 +78,8 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-svg": "*"
   },
   "engines": {
     "node": ">= 16.0.0"
