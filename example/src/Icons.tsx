@@ -8,7 +8,7 @@ export const ICONS = [
     type: 'BoxIcons',
     name: 'chevron-left',
     Component: BChevronLeft,
-    modes: ['normal', 'circle', 'square'],
+    modes: ['normal', 'double', 'circle', 'square'],
   },
   /**
    * Feather section
