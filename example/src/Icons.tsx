@@ -4,11 +4,13 @@ import {
   BChevronRight,
   BChevronUp,
   BHome,
+  BSearch,
   FeChevronDown,
   FeChevronLeft,
   FeChevronRight,
   FeChevronUp,
   FeHome,
+  FeSearch,
 } from '@fast-base/icons';
 
 export const ICONS = [
@@ -57,6 +59,12 @@ export const ICONS = [
       'smile-fill',
     ],
   },
+  {
+    type: 'BoxIcons',
+    name: 'search',
+    Component: BSearch,
+    modes: ['normal', 'fill', 'alt', 'alt2', 'alt2-fill', 'file', 'file-fill'],
+  },
   /**
    * Feather section
    */
@@ -88,5 +96,10 @@ export const ICONS = [
     type: 'Feather',
     name: 'home',
     Component: FeHome,
+  },
+  {
+    type: 'Feather',
+    name: 'search',
+    Component: FeSearch,
   },
 ];
