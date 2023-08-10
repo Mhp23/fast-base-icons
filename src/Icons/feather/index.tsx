@@ -4,4 +4,5 @@ export {default as FeChevronDown} from './FeChevronDown';
 export {default as FeChevronRight} from './FeChevronRight';
 
 export {default as FeHome} from './FeHome';
+export {default as FeUser} from './FeUser';
 export {default as FeSearch} from './FeSearch';
