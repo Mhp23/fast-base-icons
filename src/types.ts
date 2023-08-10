@@ -1,6 +1,11 @@
 import type {StyleProp, ViewStyle} from 'react-native';
 
-export type IconNameType = 'chevron-left';
+export type IconNameType =
+  | 'chevron-left'
+  | 'chevron-right'
+  | 'chevron-up'
+  | 'chevron-down';
+
 export type IconType = 'Feather' | 'BoxIcons';
 
 export interface SvgIconProps<T extends string = ''> {

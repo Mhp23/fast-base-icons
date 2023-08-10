@@ -7,6 +7,7 @@ import {
   useTheme,
   Container,
   Button,
+  Divider,
 } from '@fast-base/native';
 import {
   ScrollView,
@@ -54,18 +55,21 @@ const IconsList: React.FC = () => {
             {icons.map(({name, modes, Component}, index) => {
               const key = `${name}-${index}`;
               return (
-                <Gap behavior="style" space="xl" mode="H" key={key}>
-                  {modes.map((mode, i) => {
-                    const onPress = () => {
-                      //To Do: implementing show & copy code of Icon
-                    };
-                    return (
-                      <Button key={`${key}-${i}`} onPress={onPress} pressable>
-                        <Component mode={mode as any} color={colors?.text} />
-                      </Button>
-                    );
-                  })}
-                </Gap>
+                <React.Fragment key={key}>
+                  <Gap behavior="style" space="xl" mode="H">
+                    {modes.map((mode, i) => {
+                      const onPress = () => {
+                        //To Do: implementing show & copy code of Icon
+                      };
+                      return (
+                        <Button key={`${key}-${i}`} onPress={onPress} pressable>
+                          <Component mode={mode as any} color={colors?.text} />
+                        </Button>
+                      );
+                    })}
+                  </Gap>
+                  <Divider mode="padding" width={25} />
+                </React.Fragment>
               );
             })}
           </Gap>
