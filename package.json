@@ -1,5 +1,5 @@
 {
-  "name": "fast-base-icons",
+  "name": "@fast-base/icons",
   "version": "0.1.0",
   "description": "A library to use SVG icons in React Native",
   "main": "lib/commonjs/index",
@@ -124,11 +124,11 @@
       "prettier/prettier": [
         "error",
         {
-          "quoteProps": "consistent",
+          "arrowParens": "avoid",
+          "bracketSameLine": true,
+          "bracketSpacing": false,
           "singleQuote": true,
-          "tabWidth": 2,
-          "trailingComma": "es5",
-          "useTabs": false
+          "trailingComma": "all"
         }
       ]
     }
@@ -157,5 +157,8 @@
         }
       ]
     ]
+  },
+  "dependencies": {
+    "react-native-full-responsive": "^1.0.5"
   }
 }

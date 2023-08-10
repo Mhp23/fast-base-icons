@@ -1,17 +1,17 @@
-# fast-base-icons
+# @fast-base/icons
 
 A library to use SVG icons in React Native
 
 ## Installation
 
 ```sh
-npm install fast-base-icons
+npm install @fast-base/icons
 ```
 
 ## Usage
 
 ```js
-import { multiply } from 'fast-base-icons';
+import {multiply} from '@fast-base/icons';
 
 // ...
 

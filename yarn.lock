@@ -7890,6 +7890,11 @@ react-native-builder-bob@^0.20.0:
   optionalDependencies:
     jetifier "^2.0.0"
 
+react-native-full-responsive@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-native-full-responsive/-/react-native-full-responsive-1.0.5.tgz#56ac8acd7aa543745238df27ba8fba0deb553a40"
+  integrity sha512-Htg8qnlQCh0lvfm8W3fg8gBzpq0m4f7rqZGLo4FgIoJ5KvAiQFb2wjr77nOd0hyPgaxHqCi3ALSTDh6bczuKIQ==
+
 react-native-svg@^13.10.0:
   version "13.10.0"
   resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-13.10.0.tgz#d3c6222ea9cc1e21e2af0fd59dfbeafe7a3d0dc1"

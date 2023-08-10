@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "fast-base-icons": ["./src/index"]
+      "@fast-base/icons": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

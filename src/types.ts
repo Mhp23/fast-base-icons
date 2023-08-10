@@ -1,6 +1,26 @@
-export type IconNameType = 'academic-cap';
+import type {StyleProp, ViewStyle} from 'react-native';
 
-export interface IconProps {
-  name: IconNameType;
-  type: 'solid' | 'outline';
+export type IconNameType = 'chevron-left';
+export type IconType = 'Feather' | 'BoxIcons';
+
+export interface SvgIconProps<T extends string = ''> {
+  /**
+   * the icon component mode, for various icons it's different
+   */
+  mode?: T;
+  /**
+   * the icon component size
+   * @default 24
+   */
+  size?: number;
+  /**
+   * the icon component color
+   * @default black
+   */
+  color?: string;
+  /**
+   * the icon component container style, width, and height are not
+   * assignable instead, use the size property to change the icon size
+   */
+  style?: StyleProp<ViewStyle>;
 }
