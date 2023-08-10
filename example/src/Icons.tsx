@@ -3,10 +3,12 @@ import {
   BChevronLeft,
   BChevronRight,
   BChevronUp,
+  BHome,
   FeChevronDown,
   FeChevronLeft,
   FeChevronRight,
   FeChevronUp,
+  FeHome,
 } from '@fast-base/icons';
 
 export const ICONS = [
@@ -37,6 +39,24 @@ export const ICONS = [
     Component: BChevronDown,
     modes: ['normal', 'double', 'circle', 'square'],
   },
+  {
+    type: 'BoxIcons',
+    name: 'home',
+    Component: BHome,
+    modes: [
+      'normal',
+      'fill',
+      'alt',
+      'alt2',
+      'alt2-fill',
+      'circle',
+      'circle-fill',
+      'heart',
+      'heart-fill',
+      'smile',
+      'smile-fill',
+    ],
+  },
   /**
    * Feather section
    */
@@ -63,5 +83,10 @@ export const ICONS = [
     name: 'chevron-down',
     Component: FeChevronDown,
     modes: ['single', 'double'],
+  },
+  {
+    type: 'Feather',
+    name: 'home',
+    Component: FeHome,
   },
 ];

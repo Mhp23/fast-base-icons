@@ -7,10 +7,10 @@ import {
   useTheme,
   Container,
   Button,
-  Divider,
 } from '@fast-base/native';
 import {
   ScrollView,
+  StyleSheet,
   type NativeSyntheticEvent,
   type TextInputChangeEventData,
 } from 'react-native';
@@ -54,21 +54,38 @@ const IconsList: React.FC = () => {
           <Gap space="xl" mode="H">
             {icons.map(({name, modes, Component}, index) => {
               const key = `${name}-${index}`;
+
+              const onPress = () => {
+                //To Do: implementing show & copy code of Icon
+              };
               return (
                 <React.Fragment key={key}>
                   <Gap behavior="style" space="xl" mode="H">
-                    {modes.map((mode, i) => {
-                      const onPress = () => {
-                        //To Do: implementing show & copy code of Icon
-                      };
-                      return (
-                        <Button key={`${key}-${i}`} onPress={onPress} pressable>
-                          <Component mode={mode as any} color={colors?.text} />
-                        </Button>
-                      );
-                    })}
+                    {!Array.isArray(modes) ? (
+                      <Button
+                        key={key}
+                        pressable
+                        onPress={onPress}
+                        style={style.iconButton}>
+                        <Component color={colors?.text} />
+                      </Button>
+                    ) : (
+                      modes.map((mode, i) => {
+                        return (
+                          <Button
+                            pressable
+                            onPress={onPress}
+                            key={`${key}-${i}`}
+                            style={style.iconButton}>
+                            <Component
+                              mode={mode as any}
+                              color={colors?.text}
+                            />
+                          </Button>
+                        );
+                      })
+                    )}
                   </Gap>
-                  <Divider mode="padding" width={25} />
                 </React.Fragment>
               );
             })}
@@ -80,3 +97,9 @@ const IconsList: React.FC = () => {
 };
 
 export default IconsList;
+
+const style = StyleSheet.create({
+  iconButton: {
+    marginBottom: 25,
+  },
+});
