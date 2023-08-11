@@ -16,6 +16,8 @@ import {
 } from 'react-native';
 import {ICONS} from './Icons';
 
+const ICON_SIZE = 28;
+
 const IconsList: React.FC = () => {
   const {colors} = useTheme();
 
@@ -101,7 +103,7 @@ const IconsList: React.FC = () => {
                       pressable
                       onPress={onPress}
                       style={style.iconButton}>
-                      <Component size={32} color={colors?.text} />
+                      <Component size={ICON_SIZE} color={colors?.text} />
                     </Button>
                   ) : (
                     modes.map((mode, i) => {
@@ -112,7 +114,7 @@ const IconsList: React.FC = () => {
                           key={`${key}-${i}`}
                           style={style.iconButton}>
                           <Component
-                            size={32}
+                            size={ICON_SIZE}
                             mode={mode as any}
                             color={colors?.text}
                           />
