@@ -7,6 +7,7 @@ import {
   BImage,
   BSearch,
   BUser,
+  BX,
   FeChevronDown,
   FeChevronLeft,
   FeChevronRight,
@@ -15,6 +16,7 @@ import {
   FeImage,
   FeSearch,
   FeUser,
+  FeX,
 } from '@fast-base/icons';
 
 export const ICONS = [
@@ -106,6 +108,12 @@ export const ICONS = [
         Component: BImage,
         modes: ['normal', 'fill', 'images'],
       },
+      {
+        type: 'BoxIcons',
+        name: 'x',
+        Component: BX,
+        modes: ['normal', 'circle', 'circle-fill', 'square'],
+      },
     ],
   },
   /**
@@ -158,6 +166,12 @@ export const ICONS = [
         type: 'Feather',
         name: 'image',
         Component: FeImage,
+      },
+      {
+        type: 'Feather',
+        name: 'x',
+        Component: FeX,
+        modes: ['normal', 'circle', 'square', 'octagon'],
       },
     ],
   },
