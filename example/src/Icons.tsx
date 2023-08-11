@@ -5,6 +5,7 @@ import {
   BChevronUp,
   BHome,
   BImage,
+  BMessage,
   BSearch,
   BUser,
   BX,
@@ -14,6 +15,7 @@ import {
   FeChevronUp,
   FeHome,
   FeImage,
+  FeMessage,
   FeSearch,
   FeUser,
   FeX,
@@ -27,31 +29,26 @@ export const ICONS = [
     pack: 'BoxIcons',
     icons: [
       {
-        type: 'BoxIcons',
         name: 'chevron-up',
         Component: BChevronUp,
         modes: ['normal', 'double', 'circle', 'square'],
       },
       {
-        type: 'BoxIcons',
         name: 'chevron-left',
         Component: BChevronLeft,
         modes: ['normal', 'double', 'circle', 'square'],
       },
       {
-        type: 'BoxIcons',
         name: 'chevron-right',
         Component: BChevronRight,
         modes: ['normal', 'double', 'circle', 'square'],
       },
       {
-        type: 'BoxIcons',
         name: 'chevron-down',
         Component: BChevronDown,
         modes: ['normal', 'double', 'circle', 'square'],
       },
       {
-        type: 'BoxIcons',
         name: 'home',
         Component: BHome,
         modes: [
@@ -69,7 +66,6 @@ export const ICONS = [
         ],
       },
       {
-        type: 'BoxIcons',
         name: 'search',
         Component: BSearch,
         modes: [
@@ -83,7 +79,6 @@ export const ICONS = [
         ],
       },
       {
-        type: 'BoxIcons',
         name: 'user',
         Component: BUser,
         modes: [
@@ -103,16 +98,30 @@ export const ICONS = [
         ],
       },
       {
-        type: 'BoxIcons',
         name: 'image',
         Component: BImage,
         modes: ['normal', 'fill', 'images'],
       },
       {
-        type: 'BoxIcons',
         name: 'x',
         Component: BX,
         modes: ['normal', 'circle', 'circle-fill', 'square'],
+      },
+      {
+        name: 'message',
+        Component: BMessage,
+        modes: [
+          'normal',
+          'fill',
+          'dots',
+          'dots-fill',
+          'round',
+          'round-fill',
+          'square',
+          'square-fill',
+          'detail',
+          'detail-fill',
+        ],
       },
     ],
   },
@@ -123,55 +132,51 @@ export const ICONS = [
     pack: 'Feather',
     icons: [
       {
-        type: 'Feather',
         name: 'chevron-up',
         Component: FeChevronUp,
         modes: ['single', 'double'],
       },
       {
-        type: 'Feather',
         name: 'chevron-left',
         Component: FeChevronLeft,
         modes: ['single', 'double'],
       },
       {
-        type: 'Feather',
         name: 'chevron-right',
         Component: FeChevronRight,
         modes: ['single', 'double'],
       },
       {
-        type: 'Feather',
         name: 'chevron-down',
         Component: FeChevronDown,
         modes: ['single', 'double'],
       },
       {
-        type: 'Feather',
         name: 'home',
         Component: FeHome,
       },
       {
-        type: 'Feather',
         name: 'search',
         Component: FeSearch,
       },
       {
-        type: 'Feather',
         name: 'user',
         Component: FeUser,
         modes: ['normal', 'plus', 'minus', 'x', 'check', 'users'],
       },
       {
-        type: 'Feather',
         name: 'image',
         Component: FeImage,
       },
       {
-        type: 'Feather',
         name: 'x',
         Component: FeX,
         modes: ['normal', 'circle', 'square', 'octagon'],
+      },
+      {
+        name: 'message',
+        Component: FeMessage,
+        modes: ['circle', 'square'],
       },
     ],
   },

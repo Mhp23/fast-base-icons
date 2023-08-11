@@ -92,8 +92,8 @@ const IconsList: React.FC = () => {
                 </Text>
               </Wrapper>
               <Wrapper mt={10} mb={20} style={style.section} mode="row">
-                {icons.map(({name, modes, Component, type}, index) => {
-                  const key = `${type}-${name}-${index}`;
+                {icons.map(({name, modes, Component}, index) => {
+                  const key = `${pack}-${name}-${index}`;
                   const onPress = () => {
                     //To Do: implementing show & copy code of Icon
                   };
