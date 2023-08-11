@@ -2,6 +2,9 @@ import type {StyleProp, ViewStyle} from 'react-native';
 
 export type IconNameType =
   | 'home'
+  | 'image'
+  | 'user'
+  | 'search'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'
