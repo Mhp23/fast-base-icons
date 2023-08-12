@@ -7,6 +7,7 @@ export {default as FeX} from './FeX';
 export {default as FeSend} from './FeSend';
 export {default as FeHome} from './FeHome';
 export {default as FeUser} from './FeUser';
+export {default as FeVideo} from './FeVideo';
 export {default as FeImage} from './FeImage';
 export {default as FeSearch} from './FeSearch';
 export {default as FeCamera} from './FeCamera';

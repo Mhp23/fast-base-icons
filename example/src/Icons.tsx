@@ -10,6 +10,7 @@ import {
   BSearch,
   BSend,
   BUser,
+  BVideo,
   BX,
   FeCamera,
   FeChevronDown,
@@ -22,6 +23,7 @@ import {
   FeSearch,
   FeSend,
   FeUser,
+  FeVideo,
   FeX,
 } from '@fast-base/icons';
 
@@ -137,6 +139,19 @@ export const ICONS = [
         Component: BCamera,
         modes: ['normal', 'fill', 'off', 'off-fill', 'home', 'home-fill'],
       },
+      {
+        name: 'video',
+        Component: BVideo,
+        modes: [
+          'normal',
+          'fill',
+          'off',
+          'off-fill',
+          'recording',
+          'recording-fill',
+          'videos',
+        ],
+      },
     ],
   },
   /**
@@ -200,6 +215,11 @@ export const ICONS = [
         name: 'camera',
         Component: FeCamera,
         modes: ['normal', 'off'],
+      },
+      {
+        name: 'video',
+        Component: FeVideo,
+        modes: ['normal', 'off', 'film'],
       },
     ],
   },
