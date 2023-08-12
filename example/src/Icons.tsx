@@ -7,6 +7,7 @@ import {
   BImage,
   BMessage,
   BSearch,
+  BSend,
   BUser,
   BX,
   FeChevronDown,
@@ -17,6 +18,7 @@ import {
   FeImage,
   FeMessage,
   FeSearch,
+  FeSend,
   FeUser,
   FeX,
 } from '@fast-base/icons';
@@ -123,6 +125,11 @@ export const ICONS = [
           'detail-fill',
         ],
       },
+      {
+        name: 'send',
+        Component: BSend,
+        modes: ['normal', 'fill'],
+      },
     ],
   },
   /**
@@ -177,6 +184,10 @@ export const ICONS = [
         name: 'message',
         Component: FeMessage,
         modes: ['circle', 'square'],
+      },
+      {
+        name: 'send',
+        Component: FeSend,
       },
     ],
   },

@@ -7,6 +7,7 @@ export type IconNameType =
   | 'search'
   | 'x'
   | 'message'
+  | 'send'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'
