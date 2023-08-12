@@ -1,13 +1,12 @@
 import React from 'react';
-import SvgWrap from '../../SvgWrap';
+import {FeatherWrap} from '../../SvgWrap';
 import {Circle, Path} from 'react-native-svg';
 import type {SvgIconProps} from '../../types';
-import {DEFAULT_COLOR} from '../../constants';
 
 const FeUser = React.forwardRef<
   any,
   SvgIconProps<'normal' | 'plus' | 'minus' | 'x' | 'check' | 'users'>
->(({mode = 'normal', color = DEFAULT_COLOR, ...rest}, ref) => {
+>(({mode = 'normal', ...rest}, ref) => {
   const PathComponent = React.useMemo(() => {
     return mode === 'plus' ? (
       <React.Fragment>
@@ -48,16 +47,9 @@ const FeUser = React.forwardRef<
   }, [mode]);
 
   return (
-    <SvgWrap
-      ref={ref}
-      fill="none"
-      stroke={color}
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...rest}>
+    <FeatherWrap ref={ref} {...rest}>
       {PathComponent}
-    </SvgWrap>
+    </FeatherWrap>
   );
 });
 

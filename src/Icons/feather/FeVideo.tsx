@@ -1,11 +1,10 @@
 import React from 'react';
-import SvgWrap from '../../SvgWrap';
+import {FeatherWrap} from '../../SvgWrap';
 import {Path, Rect} from 'react-native-svg';
 import type {SvgIconProps} from '../../types';
-import {DEFAULT_COLOR} from '../../constants';
 
 const FeVideo = React.forwardRef<any, SvgIconProps<'normal' | 'off' | 'film'>>(
-  ({mode = 'normal', color = DEFAULT_COLOR, ...rest}, ref) => {
+  ({mode = 'normal', ...rest}, ref) => {
     const PathComponent = React.useMemo(() => {
       return mode === 'off' ? (
         <Path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2m5.66 0H14a2 2 0 0 1 2 2v3.34l1 1L23 7v10M1 1l22 22" />
@@ -23,16 +22,9 @@ const FeVideo = React.forwardRef<any, SvgIconProps<'normal' | 'off' | 'film'>>(
     }, [mode]);
 
     return (
-      <SvgWrap
-        ref={ref}
-        fill="none"
-        stroke={color}
-        strokeWidth={2}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        {...rest}>
+      <FeatherWrap ref={ref} {...rest}>
         {PathComponent}
-      </SvgWrap>
+      </FeatherWrap>
     );
   },
 );

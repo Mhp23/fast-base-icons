@@ -1,11 +1,10 @@
 import React from 'react';
-import SvgWrap from '../../SvgWrap';
+import {FeatherWrap} from '../../SvgWrap';
 import type {SvgIconProps} from '../../types';
-import {DEFAULT_COLOR} from '../../constants';
 import {Circle, Path} from 'react-native-svg';
 
 const FeCamera = React.forwardRef<any, SvgIconProps<'normal' | 'off'>>(
-  ({mode = 'normal', color = DEFAULT_COLOR, ...rest}, ref) => {
+  ({mode = 'normal', ...rest}, ref) => {
     const PathComponent = React.useMemo(() => {
       return mode === 'off' ? (
         <Path d="m1 1 22 22M21 21H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3m3-3h6l2 3h4a2 2 0 0 1 2 2v9.34m-7.72-2.06a4 4 0 1 1-5.56-5.56" />
@@ -18,16 +17,9 @@ const FeCamera = React.forwardRef<any, SvgIconProps<'normal' | 'off'>>(
     }, [mode]);
 
     return (
-      <SvgWrap
-        ref={ref}
-        fill="none"
-        stroke={color}
-        strokeWidth={2}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        {...rest}>
+      <FeatherWrap ref={ref} {...rest}>
         {PathComponent}
-      </SvgWrap>
+      </FeatherWrap>
     );
   },
 );
