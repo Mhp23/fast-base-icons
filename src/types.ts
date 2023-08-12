@@ -13,6 +13,7 @@ export type IconNameType =
   | 'shopping-bag'
   | 'shopping-cart'
   | 'chart'
+  | 'time'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'
