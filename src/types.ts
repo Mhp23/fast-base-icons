@@ -12,6 +12,7 @@ export type IconNameType =
   | 'video'
   | 'shopping-bag'
   | 'shopping-cart'
+  | 'chart'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'

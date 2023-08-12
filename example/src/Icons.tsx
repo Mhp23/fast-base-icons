@@ -1,5 +1,6 @@
 import {
   BCamera,
+  BChart,
   BChevronDown,
   BChevronLeft,
   BChevronRight,
@@ -15,6 +16,7 @@ import {
   BVideo,
   BX,
   FeCamera,
+  FeChart,
   FeChevronDown,
   FeChevronLeft,
   FeChevronRight,
@@ -166,6 +168,26 @@ export const ICONS = [
         Component: BShoppingCart,
         modes: ['normal', 'fill', 'alt', 'alt-fill'],
       },
+      {
+        name: 'chart',
+        Component: BChart,
+        modes: [
+          'normal',
+          'fill',
+          'bar',
+          'bar-alt',
+          'bar-alt-fill',
+          'pie',
+          'pie-fill',
+          'doughnut',
+          'doughnut-fill',
+          'line',
+          'line-down',
+          'network',
+          'network-fill',
+          'scatter',
+        ],
+      },
     ],
   },
   /**
@@ -242,6 +264,11 @@ export const ICONS = [
       {
         name: 'shopping-cart',
         Component: FeShoppingCart,
+      },
+      {
+        name: 'chart',
+        Component: FeChart,
+        modes: ['normal', 'alt', 'pie'],
       },
     ],
   },
