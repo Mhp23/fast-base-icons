@@ -4,7 +4,7 @@ import {Path} from 'react-native-svg';
 import type {SvgIconProps} from '../../types';
 import {DEFAULT_COLOR} from '../../constants';
 
-const BChevronUp = React.forwardRef<
+const BHome = React.forwardRef<
   any,
   SvgIconProps<
     | 'normal'
@@ -62,4 +62,4 @@ const BChevronUp = React.forwardRef<
   );
 });
 
-export default BChevronUp;
+export default BHome;

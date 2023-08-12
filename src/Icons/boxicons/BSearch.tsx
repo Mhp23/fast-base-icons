@@ -4,7 +4,7 @@ import {Circle, Path} from 'react-native-svg';
 import type {SvgIconProps} from '../../types';
 import {DEFAULT_COLOR} from '../../constants';
 
-const BChevronUp = React.forwardRef<
+const BSearch = React.forwardRef<
   any,
   SvgIconProps<'normal' | 'fill' | 'alt' | 'alt2' | 'alt2-fill'>
 >(({mode = 'normal', color = DEFAULT_COLOR, ...rest}, ref) => {
@@ -39,4 +39,4 @@ const BChevronUp = React.forwardRef<
   );
 });
 
-export default BChevronUp;
+export default BSearch;

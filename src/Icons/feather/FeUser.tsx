@@ -4,7 +4,7 @@ import {Circle, Path} from 'react-native-svg';
 import type {SvgIconProps} from '../../types';
 import {DEFAULT_COLOR} from '../../constants';
 
-const FeChevronUp = React.forwardRef<
+const FeUser = React.forwardRef<
   any,
   SvgIconProps<'normal' | 'plus' | 'minus' | 'x' | 'check' | 'users'>
 >(({mode = 'normal', color = DEFAULT_COLOR, ...rest}, ref) => {
@@ -61,4 +61,4 @@ const FeChevronUp = React.forwardRef<
   );
 });
 
-export default FeChevronUp;
+export default FeUser;
