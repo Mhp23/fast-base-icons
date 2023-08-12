@@ -10,6 +10,8 @@ export type IconNameType =
   | 'send'
   | 'camera'
   | 'video'
+  | 'shopping-bag'
+  | 'shopping-cart'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'

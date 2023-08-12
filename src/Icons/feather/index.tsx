@@ -12,3 +12,5 @@ export {default as FeImage} from './FeImage';
 export {default as FeSearch} from './FeSearch';
 export {default as FeCamera} from './FeCamera';
 export {default as FeMessage} from './FeMessage';
+export {default as FeShoppingBag} from './FeShoppingBag';
+export {default as FeShoppingCart} from './FeShoppingCart';
