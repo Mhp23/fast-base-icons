@@ -1,4 +1,5 @@
 import {
+  BCamera,
   BChevronDown,
   BChevronLeft,
   BChevronRight,
@@ -10,6 +11,7 @@ import {
   BSend,
   BUser,
   BX,
+  FeCamera,
   FeChevronDown,
   FeChevronLeft,
   FeChevronRight,
@@ -130,6 +132,11 @@ export const ICONS = [
         Component: BSend,
         modes: ['normal', 'fill'],
       },
+      {
+        name: 'camera',
+        Component: BCamera,
+        modes: ['normal', 'fill', 'off', 'off-fill', 'home', 'home-fill'],
+      },
     ],
   },
   /**
@@ -188,6 +195,11 @@ export const ICONS = [
       {
         name: 'send',
         Component: FeSend,
+      },
+      {
+        name: 'camera',
+        Component: FeCamera,
+        modes: ['normal', 'off'],
       },
     ],
   },

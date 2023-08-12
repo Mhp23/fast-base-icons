@@ -100,6 +100,7 @@ const IconsList: React.FC = () => {
                   return !Array.isArray(modes) ? (
                     <Button
                       key={key}
+                      opacity
                       pressable
                       onPress={onPress}
                       style={style.iconButton}>
@@ -109,6 +110,7 @@ const IconsList: React.FC = () => {
                     modes.map((mode, i) => {
                       return (
                         <Button
+                          opacity
                           pressable
                           onPress={onPress}
                           key={`${key}-${i}`}
