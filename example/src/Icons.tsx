@@ -1,4 +1,5 @@
 import {
+  BCalendar,
   BCamera,
   BChart,
   BChevronDown,
@@ -16,6 +17,7 @@ import {
   BUser,
   BVideo,
   BX,
+  FeCalendar,
   FeCamera,
   FeChart,
   FeChevronDown,
@@ -195,6 +197,11 @@ export const ICONS = [
         Component: BTime,
         modes: ['normal', 'fill', 'timer', 'timer-fill'],
       },
+      {
+        name: 'calendar',
+        Component: BCalendar,
+        modes: ['normal', 'fill', 'alt', 'alt-fill', 'event', 'event-fill'],
+      },
     ],
   },
   /**
@@ -281,6 +288,10 @@ export const ICONS = [
         name: 'time',
         Component: FeTime,
         modes: ['normal', 'watch', 'sunrise', 'sunset'],
+      },
+      {
+        name: 'calendar',
+        Component: FeCalendar,
       },
     ],
   },

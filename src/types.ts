@@ -14,6 +14,7 @@ export type IconNameType =
   | 'shopping-cart'
   | 'chart'
   | 'time'
+  | 'calendar'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'
