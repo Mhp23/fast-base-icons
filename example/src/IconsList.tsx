@@ -16,7 +16,7 @@ import {
 } from 'react-native';
 import {ICONS} from './Icons';
 
-const ICON_SIZE = 28;
+const ICON_SIZE = 22.5;
 
 const IconsList: React.FC = () => {
   const {colors} = useTheme();
