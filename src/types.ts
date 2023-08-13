@@ -15,6 +15,7 @@ export type IconNameType =
   | 'chart'
   | 'time'
   | 'calendar'
+  | 'emoji'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'

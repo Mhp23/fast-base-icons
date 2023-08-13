@@ -6,6 +6,7 @@ import {
   BChevronLeft,
   BChevronRight,
   BChevronUp,
+  BEmoji,
   BHome,
   BImage,
   BMessage,
@@ -24,6 +25,7 @@ import {
   FeChevronLeft,
   FeChevronRight,
   FeChevronUp,
+  FeEmoji,
   FeHome,
   FeImage,
   FeMessage,
@@ -202,6 +204,20 @@ export const ICONS = [
         Component: BCalendar,
         modes: ['normal', 'fill', 'alt', 'alt-fill', 'event', 'event-fill'],
       },
+      {
+        name: 'emoji',
+        Component: BEmoji,
+        modes: [
+          'smile',
+          'smile-fill',
+          'wink',
+          'wink-fill',
+          'sad',
+          'sad-fill',
+          'meh',
+          'meh-fill',
+        ],
+      },
     ],
   },
   /**
@@ -292,6 +308,11 @@ export const ICONS = [
       {
         name: 'calendar',
         Component: FeCalendar,
+      },
+      {
+        name: 'emoji',
+        Component: FeEmoji,
+        modes: ['smile', 'sad', 'meh'],
       },
     ],
   },

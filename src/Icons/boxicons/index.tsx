@@ -8,6 +8,7 @@ export {default as BTime} from './BTime';
 export {default as BSend} from './BSend';
 export {default as BHome} from './BHome';
 export {default as BUser} from './BUser';
+export {default as BEmoji} from './BEmoji';
 export {default as BChart} from './BChart';
 export {default as BImage} from './BImage';
 export {default as BVideo} from './BVideo';
