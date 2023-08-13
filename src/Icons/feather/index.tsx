@@ -17,5 +17,6 @@ export {default as FeSearch} from './FeSearch';
 export {default as FeCamera} from './FeCamera';
 export {default as FeMessage} from './FeMessage';
 export {default as FeCalendar} from './FeCalendar';
+export {default as FeBookmark} from './FeBookmark';
 export {default as FeShoppingBag} from './FeShoppingBag';
 export {default as FeShoppingCart} from './FeShoppingCart';

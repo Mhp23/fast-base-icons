@@ -17,6 +17,7 @@ export type IconNameType =
   | 'calendar'
   | 'emoji'
   | 'bell'
+  | 'bookmark'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'

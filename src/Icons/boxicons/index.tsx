@@ -17,5 +17,6 @@ export {default as BSearch} from './BSearch';
 export {default as BCamera} from './BCamera';
 export {default as BMessage} from './BMessage';
 export {default as BCalendar} from './BCalendar';
+export {default as BBookmark} from './BBookmark';
 export {default as BShoppingBag} from './BShoppingBag';
 export {default as BShoppingCart} from './BShoppingCart';

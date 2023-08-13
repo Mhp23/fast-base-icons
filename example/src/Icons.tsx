@@ -1,5 +1,6 @@
 import {
   BBell,
+  BBookmark,
   BCalendar,
   BCamera,
   BChart,
@@ -20,6 +21,7 @@ import {
   BVideo,
   BX,
   FeBell,
+  FeBookmark,
   FeCalendar,
   FeCamera,
   FeChart,
@@ -225,6 +227,18 @@ export const ICONS = [
         Component: BBell,
         modes: ['normal', 'fill', 'off', 'off-fill', 'ring'],
       },
+      {
+        name: 'bookmark',
+        Component: BBookmark,
+        modes: [
+          'normal',
+          'fill',
+          'bookmarks',
+          'bookmarks-fill',
+          'star',
+          'star-fill',
+        ],
+      },
     ],
   },
   /**
@@ -325,6 +339,11 @@ export const ICONS = [
         name: 'bell',
         Component: FeBell,
         modes: ['normal', 'off'],
+      },
+      {
+        name: 'bookmark',
+        Component: FeBookmark,
+        modes: ['normal', 'star'],
       },
     ],
   },
