@@ -16,6 +16,7 @@ export type IconNameType =
   | 'time'
   | 'calendar'
   | 'emoji'
+  | 'bell'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'

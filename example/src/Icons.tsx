@@ -1,4 +1,5 @@
 import {
+  BBell,
   BCalendar,
   BCamera,
   BChart,
@@ -18,6 +19,7 @@ import {
   BUser,
   BVideo,
   BX,
+  FeBell,
   FeCalendar,
   FeCamera,
   FeChart,
@@ -218,6 +220,11 @@ export const ICONS = [
           'meh-fill',
         ],
       },
+      {
+        name: 'bell',
+        Component: BBell,
+        modes: ['normal', 'fill', 'off', 'off-fill', 'ring'],
+      },
     ],
   },
   /**
@@ -313,6 +320,11 @@ export const ICONS = [
         name: 'emoji',
         Component: FeEmoji,
         modes: ['smile', 'sad', 'meh'],
+      },
+      {
+        name: 'bell',
+        Component: FeBell,
+        modes: ['normal', 'off'],
       },
     ],
   },
