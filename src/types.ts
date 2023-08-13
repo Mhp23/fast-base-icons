@@ -21,6 +21,7 @@ export type IconNameType =
   | 'file'
   | 'lock'
   | 'share'
+  | 'map'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'

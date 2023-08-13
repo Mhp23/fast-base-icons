@@ -4,6 +4,7 @@ export {default as FeChevronDown} from './FeChevronDown';
 export {default as FeChevronRight} from './FeChevronRight';
 
 export {default as FeX} from './FeX';
+export {default as FeMap} from './FeMap';
 export {default as FeLock} from './FeLock';
 export {default as FeFile} from './FeFile';
 export {default as FeBell} from './FeBell';
