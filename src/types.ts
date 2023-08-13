@@ -18,6 +18,7 @@ export type IconNameType =
   | 'emoji'
   | 'bell'
   | 'bookmark'
+  | 'file'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'
