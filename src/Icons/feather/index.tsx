@@ -11,6 +11,7 @@ export {default as FeTime} from './FeTime';
 export {default as FeSend} from './FeSend';
 export {default as FeHome} from './FeHome';
 export {default as FeUser} from './FeUser';
+export {default as FeShare} from './FeShare';
 export {default as FeEmoji} from './FeEmoji';
 export {default as FeChart} from './FeChart';
 export {default as FeVideo} from './FeVideo';

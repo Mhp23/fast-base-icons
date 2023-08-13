@@ -20,6 +20,7 @@ export type IconNameType =
   | 'bookmark'
   | 'file'
   | 'lock'
+  | 'share'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'
