@@ -83,11 +83,7 @@ const IconsList: React.FC = () => {
           return (
             <React.Fragment key={pack}>
               <Wrapper background={colors?.flat} p={15}>
-                <Text
-                  weight="800"
-                  size="xl"
-                  height={30}
-                  color={colors?.secondText}>
+                <Text weight="800" size="xl" height={30}>
                   {pack}
                 </Text>
               </Wrapper>
@@ -104,7 +100,7 @@ const IconsList: React.FC = () => {
                       pressable
                       onPress={onPress}
                       style={style.iconButton}>
-                      <Component size={ICON_SIZE} color={colors?.text} />
+                      <Component size={ICON_SIZE} color={colors?.secondText} />
                     </Button>
                   ) : (
                     modes.map((mode, i) => {
@@ -118,7 +114,7 @@ const IconsList: React.FC = () => {
                           <Component
                             size={ICON_SIZE}
                             mode={mode as any}
-                            color={colors?.text}
+                            color={colors?.secondText}
                           />
                         </Button>
                       );
