@@ -10,6 +10,7 @@ import {
   BChevronUp,
   BEmoji,
   BFile,
+  BGrid,
   BHome,
   BImage,
   BLock,
@@ -36,6 +37,7 @@ import {
   FeChevronUp,
   FeEmoji,
   FeFile,
+  FeGrid,
   FeHome,
   FeImage,
   FeLock,
@@ -307,6 +309,11 @@ export const ICONS = [
         Component: BTrash,
         modes: ['normal', 'fill', 'alt', 'alt-fill'],
       },
+      {
+        name: 'grid',
+        Component: BGrid,
+        modes: ['normal', 'fill', 'alt', 'alt-fill', 'vertical', 'horizontal'],
+      },
     ],
   },
   /**
@@ -437,6 +444,10 @@ export const ICONS = [
         name: 'trash',
         Component: FeTrash,
         modes: ['normal', 'fill'],
+      },
+      {
+        name: 'grid',
+        Component: FeGrid,
       },
     ],
   },

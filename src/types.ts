@@ -23,6 +23,7 @@ export type IconNameType =
   | 'share'
   | 'map'
   | 'trash'
+  | 'grid'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'
