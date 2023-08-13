@@ -19,6 +19,7 @@ export type IconNameType =
   | 'bell'
   | 'bookmark'
   | 'file'
+  | 'lock'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'

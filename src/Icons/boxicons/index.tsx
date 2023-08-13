@@ -4,6 +4,7 @@ export {default as BChevronLeft} from './BChevronLeft';
 export {default as BChevronRight} from './BChevronRight';
 
 export {default as BX} from './BX';
+export {default as BLock} from './BLock';
 export {default as BFile} from './BFile';
 export {default as BBell} from './BBell';
 export {default as BTime} from './BTime';
