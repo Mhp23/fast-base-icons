@@ -23,6 +23,7 @@ export {default as FeVideo} from './FeVideo';
 export {default as FeImage} from './FeImage';
 export {default as FeSearch} from './FeSearch';
 export {default as FeCamera} from './FeCamera';
+export {default as FeArchive} from './FeArchive';
 export {default as FeMessage} from './FeMessage';
 export {default as FeCalendar} from './FeCalendar';
 export {default as FeBookmark} from './FeBookmark';

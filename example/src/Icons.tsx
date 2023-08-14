@@ -1,4 +1,5 @@
 import {
+  BArchive,
   BBell,
   BBookmark,
   BCalendar,
@@ -29,6 +30,7 @@ import {
   BUser,
   BVideo,
   BX,
+  FeArchive,
   FeBell,
   FeBookmark,
   FeCalendar,
@@ -341,6 +343,11 @@ export const ICONS = [
         Component: BStore,
         modes: ['normal', 'fill', 'alt', 'alt-fill'],
       },
+      {
+        name: 'archive',
+        Component: BArchive,
+        modes: ['normal', 'fill', 'box', 'box-fill'],
+      },
     ],
   },
   /**
@@ -484,6 +491,10 @@ export const ICONS = [
       {
         name: 'heart',
         Component: FeHeart,
+      },
+      {
+        name: 'archive',
+        Component: FeArchive,
       },
     ],
   },

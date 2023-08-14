@@ -24,6 +24,7 @@ export {default as BImage} from './BImage';
 export {default as BVideo} from './BVideo';
 export {default as BSearch} from './BSearch';
 export {default as BCamera} from './BCamera';
+export {default as BArchive} from './BArchive';
 export {default as BMessage} from './BMessage';
 export {default as BCalendar} from './BCalendar';
 export {default as BBookmark} from './BBookmark';
