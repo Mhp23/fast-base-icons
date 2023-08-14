@@ -21,6 +21,7 @@ import {
   BShare,
   BShoppingBag,
   BShoppingCart,
+  BThumb,
   BTime,
   BTrash,
   BUser,
@@ -48,6 +49,7 @@ import {
   FeShare,
   FeShoppingBag,
   FeShoppingCart,
+  FeThumb,
   FeTime,
   FeTrash,
   FeUser,
@@ -314,6 +316,11 @@ export const ICONS = [
         Component: BGrid,
         modes: ['normal', 'fill', 'alt', 'alt-fill', 'vertical', 'horizontal'],
       },
+      {
+        name: 'thumb',
+        Component: BThumb,
+        modes: ['up', 'up-fill', 'down', 'down-fill'],
+      },
     ],
   },
   /**
@@ -448,6 +455,11 @@ export const ICONS = [
       {
         name: 'grid',
         Component: FeGrid,
+      },
+      {
+        name: 'thumb',
+        Component: FeThumb,
+        modes: ['up', 'down'],
       },
     ],
   },

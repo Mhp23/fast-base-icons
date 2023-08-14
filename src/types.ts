@@ -24,6 +24,7 @@ export type IconNameType =
   | 'map'
   | 'trash'
   | 'grid'
+  | 'thumb'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'
