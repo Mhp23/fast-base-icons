@@ -6,6 +6,7 @@ import {
   Wrapper,
   useTheme,
   Container,
+  useStyle,
 } from '@fast-base/native';
 import {
   ScrollView,
@@ -15,11 +16,30 @@ import {
   Platform,
 } from 'react-native';
 import {ICONS} from './Icons';
+import {useRM} from 'react-native-full-responsive';
 
 const ICON_SIZE = 22.5;
 
 const IconsList: React.FC = () => {
   const {colors} = useTheme();
+
+  const {rs} = useRM();
+
+  const sectionStyle = useStyle(() => {
+    return {
+      ...Platform.select({
+        web: {
+          rowGap: rs(50),
+          columnGap: rs(40),
+        },
+        default: {
+          rowGap: rs(30),
+          columnGap: rs(20),
+        },
+      }),
+      justifyContent: 'center',
+    };
+  }, [rs]);
 
   const [collection, setCollection] = React.useState<typeof ICONS>(ICONS);
 
@@ -87,7 +107,7 @@ const IconsList: React.FC = () => {
                   {pack}
                 </Text>
               </Wrapper>
-              <Wrapper mt={10} mb={20} style={style.section} mode="row">
+              <Wrapper mt={10} mb={20} style={sectionStyle} mode="row">
                 {icons.map(({name, modes, Component}, index) => {
                   const key = `${pack}-${name}-${index}`;
                   const onPress = () => {
@@ -133,19 +153,6 @@ const IconsList: React.FC = () => {
 export default IconsList;
 
 const style = StyleSheet.create({
-  section: {
-    ...Platform.select({
-      web: {
-        rowGap: 50,
-        columnGap: 40,
-      },
-      default: {
-        rowGap: 30,
-        columnGap: 20,
-      },
-    }),
-    justifyContent: 'center',
-  },
   iconButton: {
     flex: 1,
   },
