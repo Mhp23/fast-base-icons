@@ -26,6 +26,7 @@ export type IconNameType =
   | 'grid'
   | 'thumb'
   | 'heart'
+  | 'store'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'
