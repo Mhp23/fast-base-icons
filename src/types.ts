@@ -32,6 +32,7 @@ export type IconNameType =
   | 'plus'
   | 'minus'
   | 'social-media'
+  | 'link'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'
