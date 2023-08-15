@@ -13,4 +13,6 @@ const FeArchive = React.forwardRef<any, Omit<SvgIconProps, 'mode'>>(
   },
 );
 
+FeArchive.displayName = 'FeArchive';
+
 export default FeArchive;

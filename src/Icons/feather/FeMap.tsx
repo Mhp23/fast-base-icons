@@ -3,7 +3,7 @@ import {FeatherWrap} from '../../SvgWrap';
 import type {SvgIconProps} from '../../types';
 import {Circle, Path} from 'react-native-svg';
 
-const FeLocation = React.forwardRef<
+const FeMap = React.forwardRef<
   any,
   SvgIconProps<'normal' | 'pin' | 'navigation'>
 >(({mode = 'normal', ...rest}, ref) => {
@@ -27,4 +27,4 @@ const FeLocation = React.forwardRef<
   );
 });
 
-export default FeLocation;
+export default FeMap;

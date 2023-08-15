@@ -21,4 +21,6 @@ const FeBookmark = React.forwardRef<any, SvgIconProps<'normal' | 'star'>>(
   },
 );
 
+FeBookmark.displayName = 'FeBookmark';
+
 export default FeBookmark;

@@ -21,4 +21,6 @@ const FeChevronDown = React.forwardRef<any, SvgIconProps<'single' | 'double'>>(
   },
 );
 
+FeChevronDown.displayName = 'FeChevronDown';
+
 export default FeChevronDown;

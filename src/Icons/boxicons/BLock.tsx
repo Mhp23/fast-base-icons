@@ -47,4 +47,6 @@ const BLock = React.forwardRef<
   );
 });
 
+BLock.displayName = 'BLock';
+
 export default BLock;

@@ -33,4 +33,6 @@ const BArchive = React.forwardRef<
   );
 });
 
+BArchive.displayName = 'BArchive';
+
 export default BArchive;

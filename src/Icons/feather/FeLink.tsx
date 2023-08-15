@@ -27,4 +27,6 @@ const FeLink = React.forwardRef<
   );
 });
 
+FeLink.displayName = 'FeLink';
+
 export default FeLink;

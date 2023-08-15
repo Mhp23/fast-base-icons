@@ -33,4 +33,6 @@ const BImage = React.forwardRef<
   );
 });
 
+BImage.displayName = 'BImage';
+
 export default BImage;

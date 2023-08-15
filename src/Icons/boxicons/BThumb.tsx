@@ -27,4 +27,6 @@ const BThumb = React.forwardRef<
   );
 });
 
+BThumb.displayName = 'BThumb';
+
 export default BThumb;

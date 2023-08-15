@@ -27,4 +27,6 @@ const BShare = React.forwardRef<
   );
 });
 
+BShare.displayName = 'BShare';
+
 export default BShare;

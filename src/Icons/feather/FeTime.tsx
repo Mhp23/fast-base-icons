@@ -32,4 +32,6 @@ const FeTime = React.forwardRef<
   );
 });
 
+FeTime.displayName = 'FeTime';
+
 export default FeTime;

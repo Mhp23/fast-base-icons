@@ -13,4 +13,6 @@ const FeGrid = React.forwardRef<any, Omit<SvgIconProps, 'mode'>>(
   },
 );
 
+FeGrid.displayName = 'FeGrid';
+
 export default FeGrid;

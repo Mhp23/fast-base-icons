@@ -30,4 +30,6 @@ const FePlus = React.forwardRef<
   );
 });
 
+FePlus.displayName = 'FePlus';
+
 export default FePlus;

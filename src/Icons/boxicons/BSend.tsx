@@ -22,4 +22,6 @@ const BSend = React.forwardRef<any, SvgIconProps<'normal' | 'fill'>>(
   },
 );
 
+BSend.displayName = 'BSend';
+
 export default BSend;

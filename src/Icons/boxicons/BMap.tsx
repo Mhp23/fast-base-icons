@@ -47,4 +47,6 @@ const BLocation = React.forwardRef<
   );
 });
 
+BLocation.displayName = 'BLocation';
+
 export default BLocation;

@@ -25,4 +25,6 @@ const BPlatform = React.forwardRef<
   );
 });
 
+BPlatform.displayName = 'BPlatform';
+
 export default BPlatform;

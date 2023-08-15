@@ -71,4 +71,6 @@ const BUser = React.forwardRef<
   );
 });
 
+BUser.displayName = 'BUser';
+
 export default BUser;

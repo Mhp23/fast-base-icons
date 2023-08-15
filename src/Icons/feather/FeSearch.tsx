@@ -14,4 +14,6 @@ const FeSearch = React.forwardRef<any, Omit<SvgIconProps, 'mode'>>(
   },
 );
 
+FeSearch.displayName = 'FeSearch';
+
 export default FeSearch;

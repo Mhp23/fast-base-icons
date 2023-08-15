@@ -30,4 +30,6 @@ const BPlus = React.forwardRef<
   );
 });
 
+BPlus.displayName = 'BPlus';
+
 export default BPlus;

@@ -13,4 +13,6 @@ const FeSend = React.forwardRef<any, Omit<SvgIconProps, 'mode'>>(
   },
 );
 
+FeSend.displayName = 'FeSend';
+
 export default FeSend;

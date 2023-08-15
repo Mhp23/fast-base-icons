@@ -30,4 +30,6 @@ const BMinus = React.forwardRef<
   );
 });
 
+BMinus.displayName = 'BMinus';
+
 export default BMinus;

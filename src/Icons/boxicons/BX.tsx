@@ -30,4 +30,6 @@ const BX = React.forwardRef<
   );
 });
 
+BX.displayName = 'BX';
+
 export default BX;

@@ -33,4 +33,6 @@ const BTime = React.forwardRef<
   );
 });
 
+BTime.displayName = 'BTime';
+
 export default BTime;

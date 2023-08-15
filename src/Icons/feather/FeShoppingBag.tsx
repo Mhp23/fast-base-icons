@@ -14,4 +14,6 @@ const FeShoppingBag = React.forwardRef<any, Omit<SvgIconProps, 'mode'>>(
   },
 );
 
+FeShoppingBag.displayName = 'FeShoppingBag';
+
 export default FeShoppingBag;

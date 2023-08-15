@@ -39,4 +39,6 @@ const BBookmark = React.forwardRef<
   );
 });
 
+BBookmark.displayName = 'BBookmark';
+
 export default BBookmark;

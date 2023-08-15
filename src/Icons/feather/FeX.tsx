@@ -32,4 +32,6 @@ const FeX = React.forwardRef<
   );
 });
 
+FeX.displayName = 'FeX';
+
 export default FeX;

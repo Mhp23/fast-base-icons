@@ -15,4 +15,6 @@ const FeImage = React.forwardRef<any, Omit<SvgIconProps, 'mode'>>(
   },
 );
 
+FeImage.displayName = 'FeImage';
+
 export default FeImage;

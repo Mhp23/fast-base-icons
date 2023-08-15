@@ -26,4 +26,6 @@ const FeShare = React.forwardRef<any, SvgIconProps<'normal' | 'alt'>>(
   },
 );
 
+FeShare.displayName = 'FeShare';
+
 export default FeShare;

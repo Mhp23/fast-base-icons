@@ -36,4 +36,6 @@ const BChevronRight = React.forwardRef<
   );
 });
 
+BChevronRight.displayName = 'BChevronRight';
+
 export default BChevronRight;

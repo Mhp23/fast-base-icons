@@ -27,4 +27,6 @@ const FeLock = React.forwardRef<any, SvgIconProps<'lock' | 'unlock'>>(
   },
 );
 
+FeLock.displayName = 'FeLock';
+
 export default FeLock;

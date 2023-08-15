@@ -83,4 +83,6 @@ const BChart = React.forwardRef<
   );
 });
 
+BChart.displayName = 'BChart';
+
 export default BChart;

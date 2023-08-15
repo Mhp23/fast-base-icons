@@ -24,4 +24,6 @@ const FeCamera = React.forwardRef<any, SvgIconProps<'normal' | 'off'>>(
   },
 );
 
+FeCamera.displayName = 'FeCamera';
+
 export default FeCamera;

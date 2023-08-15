@@ -29,4 +29,6 @@ const FeVideo = React.forwardRef<any, SvgIconProps<'normal' | 'off' | 'film'>>(
   },
 );
 
+FeVideo.displayName = 'FeVideo';
+
 export default FeVideo;

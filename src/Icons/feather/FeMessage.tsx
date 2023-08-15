@@ -21,4 +21,6 @@ const FeMessage = React.forwardRef<any, SvgIconProps<'square' | 'circle'>>(
   },
 );
 
+FeMessage.displayName = 'FeMessage';
+
 export default FeMessage;

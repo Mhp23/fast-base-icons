@@ -57,4 +57,6 @@ const BMessage = React.forwardRef<
   );
 });
 
+BMessage.displayName = 'BMessage';
+
 export default BMessage;

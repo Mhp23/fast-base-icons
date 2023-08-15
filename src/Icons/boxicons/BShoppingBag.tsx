@@ -30,4 +30,6 @@ const BShoppingBag = React.forwardRef<
   );
 });
 
+BShoppingBag.displayName = 'BShoppingBag';
+
 export default BShoppingBag;

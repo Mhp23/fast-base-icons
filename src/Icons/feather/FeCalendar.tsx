@@ -14,4 +14,6 @@ const FeCalendar = React.forwardRef<any, Omit<SvgIconProps, 'mode'>>(
   },
 );
 
+FeCalendar.displayName = 'FeCalendar';
+
 export default FeCalendar;

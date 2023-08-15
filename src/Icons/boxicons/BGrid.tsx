@@ -33,4 +33,6 @@ const BGrid = React.forwardRef<
   );
 });
 
+BGrid.displayName = 'BGrid';
+
 export default BGrid;

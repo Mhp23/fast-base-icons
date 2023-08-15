@@ -27,4 +27,6 @@ const BStore = React.forwardRef<
   );
 });
 
+BStore.displayName = 'BStore';
+
 export default BStore;

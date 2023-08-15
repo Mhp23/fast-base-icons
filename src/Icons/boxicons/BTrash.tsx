@@ -30,4 +30,6 @@ const BTrash = React.forwardRef<
   );
 });
 
+BTrash.displayName = 'BTrash';
+
 export default BTrash;

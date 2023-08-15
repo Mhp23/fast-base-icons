@@ -47,4 +47,6 @@ const BVideo = React.forwardRef<
   );
 });
 
+BVideo.displayName = 'BVideo';
+
 export default BVideo;

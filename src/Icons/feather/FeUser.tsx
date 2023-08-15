@@ -53,4 +53,6 @@ const FeUser = React.forwardRef<
   );
 });
 
+FeUser.displayName = 'FeUser';
+
 export default FeUser;

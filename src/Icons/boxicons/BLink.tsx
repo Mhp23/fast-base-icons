@@ -36,4 +36,6 @@ const BLink = React.forwardRef<
   );
 });
 
+BLink.displayName = 'BLink';
+
 export default BLink;

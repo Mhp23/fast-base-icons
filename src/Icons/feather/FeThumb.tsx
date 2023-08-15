@@ -21,4 +21,6 @@ const FeThumb = React.forwardRef<any, SvgIconProps<'up' | 'down'>>(
   },
 );
 
+FeThumb.displayName = 'FeThumb';
+
 export default FeThumb;

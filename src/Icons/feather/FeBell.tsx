@@ -21,4 +21,6 @@ const FeBell = React.forwardRef<any, SvgIconProps<'normal' | 'off'>>(
   },
 );
 
+FeBell.displayName = 'FeBell';
+
 export default FeBell;

@@ -15,4 +15,6 @@ const FeShoppingCart = React.forwardRef<any, Omit<SvgIconProps, 'mode'>>(
   },
 );
 
+FeShoppingCart.displayName = 'FeShoppingCart';
+
 export default FeShoppingCart;

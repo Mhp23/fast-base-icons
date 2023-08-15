@@ -36,4 +36,6 @@ const BHeart = React.forwardRef<
   );
 });
 
+BHeart.displayName = 'BHeart';
+
 export default BHeart;

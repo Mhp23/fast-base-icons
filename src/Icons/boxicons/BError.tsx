@@ -42,4 +42,6 @@ const BError = React.forwardRef<
   );
 });
 
+BError.displayName = 'BError';
+
 export default BError;

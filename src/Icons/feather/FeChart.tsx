@@ -26,4 +26,6 @@ const FeChart = React.forwardRef<any, SvgIconProps<'normal' | 'alt' | 'pie'>>(
   },
 );
 
+FeChart.displayName = 'FeChart';
+
 export default FeChart;

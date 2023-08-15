@@ -21,4 +21,6 @@ const FeTrash = React.forwardRef<any, SvgIconProps<'normal' | 'fill'>>(
   },
 );
 
+FeTrash.displayName = 'FeTrash';
+
 export default FeTrash;

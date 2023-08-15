@@ -43,4 +43,6 @@ const BShoppingCart = React.forwardRef<
   );
 });
 
+BShoppingCart.displayName = 'BShoppingCart';
+
 export default BShoppingCart;

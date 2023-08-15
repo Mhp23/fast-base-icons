@@ -37,4 +37,6 @@ const BCalendar = React.forwardRef<
   );
 });
 
+BCalendar.displayName = 'BCalendar';
+
 export default BCalendar;

@@ -47,4 +47,6 @@ const BFile = React.forwardRef<
   );
 });
 
+BFile.displayName = 'BFile';
+
 export default BFile;

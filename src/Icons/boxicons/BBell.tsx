@@ -29,4 +29,6 @@ const BBell = React.forwardRef<
   );
 });
 
+BBell.displayName = 'BBell';
+
 export default BBell;

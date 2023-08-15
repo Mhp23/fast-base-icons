@@ -46,4 +46,6 @@ const BCamera = React.forwardRef<
   );
 });
 
+BCamera.displayName = 'BCamera';
+
 export default BCamera;

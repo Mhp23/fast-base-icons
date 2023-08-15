@@ -39,4 +39,6 @@ const BSearch = React.forwardRef<
   );
 });
 
+BSearch.displayName = 'BSearch';
+
 export default BSearch;

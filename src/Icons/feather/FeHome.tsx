@@ -14,4 +14,6 @@ const FeHome = React.forwardRef<any, Omit<SvgIconProps, 'mode'>>(
   },
 );
 
+FeHome.displayName = 'FeHome';
+
 export default FeHome;

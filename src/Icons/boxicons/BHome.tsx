@@ -62,4 +62,6 @@ const BHome = React.forwardRef<
   );
 });
 
+BHome.displayName = 'BHome';
+
 export default BHome;

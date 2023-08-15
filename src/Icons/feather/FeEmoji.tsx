@@ -32,4 +32,6 @@ const FeEmoji = React.forwardRef<any, SvgIconProps<'smile' | 'sad' | 'meh'>>(
   },
 );
 
+FeEmoji.displayName = 'FeEmoji';
+
 export default FeEmoji;

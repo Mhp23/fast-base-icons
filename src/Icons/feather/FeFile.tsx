@@ -27,4 +27,6 @@ const FeFile = React.forwardRef<any, SvgIconProps<'normal' | 'text'>>(
   },
 );
 
+FeFile.displayName = 'FeFile';
+
 export default FeFile;

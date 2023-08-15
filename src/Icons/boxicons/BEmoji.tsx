@@ -64,4 +64,6 @@ const BEmoji = React.forwardRef<
   );
 });
 
+BEmoji.displayName = 'BEmoji';
+
 export default BEmoji;

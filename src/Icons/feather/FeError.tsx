@@ -27,4 +27,6 @@ const FeError = React.forwardRef<
   );
 });
 
+FeError.displayName = 'FeError';
+
 export default FeError;

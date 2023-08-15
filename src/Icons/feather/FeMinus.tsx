@@ -30,4 +30,6 @@ const FeMinus = React.forwardRef<
   );
 });
 
+FeMinus.displayName = 'FeMinus';
+
 export default FeMinus;

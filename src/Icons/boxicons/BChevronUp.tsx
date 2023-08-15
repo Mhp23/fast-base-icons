@@ -36,4 +36,6 @@ const BChevronUp = React.forwardRef<
   );
 });
 
+BChevronUp.displayName = 'BChevronUp';
+
 export default BChevronUp;

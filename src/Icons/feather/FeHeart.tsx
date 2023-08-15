@@ -13,4 +13,6 @@ const FeHeart = React.forwardRef<any, Omit<SvgIconProps, 'mode'>>(
   },
 );
 
+FeHeart.displayName = 'FeHeart';
+
 export default FeHeart;
