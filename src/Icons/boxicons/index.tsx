@@ -13,6 +13,8 @@ export {default as BTime} from './BTime';
 export {default as BSend} from './BSend';
 export {default as BHome} from './BHome';
 export {default as BUser} from './BUser';
+export {default as BPlus} from './BPlus';
+export {default as BMinus} from './BMinus';
 export {default as BError} from './BError';
 export {default as BStore} from './BStore';
 export {default as BHeart} from './BHeart';

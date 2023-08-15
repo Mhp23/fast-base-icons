@@ -29,6 +29,8 @@ export type IconNameType =
   | 'store'
   | 'archive'
   | 'error'
+  | 'plus'
+  | 'minus'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'
