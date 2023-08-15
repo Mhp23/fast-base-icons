@@ -30,6 +30,7 @@ export {default as BSearch} from './BSearch';
 export {default as BCamera} from './BCamera';
 export {default as BArchive} from './BArchive';
 export {default as BMessage} from './BMessage';
+export {default as BPlatform} from './BPlatform';
 export {default as BCalendar} from './BCalendar';
 export {default as BBookmark} from './BBookmark';
 export {default as BSocialMedia} from './BSocialMedia';
