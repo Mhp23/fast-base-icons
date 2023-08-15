@@ -13,6 +13,7 @@ export {default as FeTime} from './FeTime';
 export {default as FeSend} from './FeSend';
 export {default as FeHome} from './FeHome';
 export {default as FeUser} from './FeUser';
+export {default as FeError} from './FeError';
 export {default as FeHeart} from './FeHeart';
 export {default as FeThumb} from './FeThumb';
 export {default as FeTrash} from './FeTrash';

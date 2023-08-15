@@ -10,6 +10,7 @@ import {
   BChevronRight,
   BChevronUp,
   BEmoji,
+  BError,
   BFile,
   BGrid,
   BHeart,
@@ -41,6 +42,7 @@ import {
   FeChevronRight,
   FeChevronUp,
   FeEmoji,
+  FeError,
   FeFile,
   FeGrid,
   FeHeart,
@@ -348,6 +350,11 @@ export const ICONS = [
         Component: BArchive,
         modes: ['normal', 'fill', 'box', 'box-fill'],
       },
+      {
+        name: 'error',
+        Component: BError,
+        modes: ['normal', 'fill', 'alt', 'alt-fill', 'circle', 'circle-fill'],
+      },
     ],
   },
   /**
@@ -495,6 +502,11 @@ export const ICONS = [
       {
         name: 'archive',
         Component: FeArchive,
+      },
+      {
+        name: 'error',
+        Component: FeError,
+        modes: ['circle', 'tirangle', 'octagon'],
       },
     ],
   },

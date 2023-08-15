@@ -28,6 +28,7 @@ export type IconNameType =
   | 'heart'
   | 'store'
   | 'archive'
+  | 'error'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'
