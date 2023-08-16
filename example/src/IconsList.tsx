@@ -102,7 +102,7 @@ const IconsList: React.FC = () => {
         {collection.map(({pack, icons}) => {
           return (
             <React.Fragment key={pack}>
-              <Wrapper background={colors?.flat} p={15}>
+              <Wrapper background={colors?.flat} p={15} mb={15}>
                 <Text weight="800" size="xl" height={30}>
                   {pack}
                 </Text>
