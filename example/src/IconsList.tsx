@@ -65,8 +65,17 @@ const IconsList: React.FC = () => {
       } else {
         const filteredData = ICONS.map(({pack}, index) => {
           const filteredIcons = (ICONS[index]?.icons as any).filter(
-            ({name}: any) => {
-              return name.includes(searchText);
+            ({name, alternatives}: any) => {
+              let isExist = name.includes(searchText);
+              if (!isExist && !!alternatives) {
+                for (let i = 0; i < alternatives.length; ++i) {
+                  isExist = alternatives[i].includes(searchText);
+                  if (isExist) {
+                    break;
+                  }
+                }
+              }
+              return isExist;
             },
           );
           return {

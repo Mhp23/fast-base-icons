@@ -101,6 +101,7 @@ export const ICONS = [
       },
       {
         name: 'home',
+        alternatives: ['house'],
         Component: BHome,
         modes: [
           'normal',
@@ -118,6 +119,7 @@ export const ICONS = [
       },
       {
         name: 'search',
+        alternatives: ['find'],
         Component: BSearch,
         modes: [
           'normal',
@@ -131,6 +133,7 @@ export const ICONS = [
       },
       {
         name: 'user',
+        alternatives: ['person'],
         Component: BUser,
         modes: [
           'normal',
@@ -151,15 +154,18 @@ export const ICONS = [
       {
         name: 'image',
         Component: BImage,
+        alternatives: ['picture'],
         modes: ['normal', 'fill', 'images'],
       },
       {
         name: 'x',
         Component: BX,
+        alternatives: ['close', 'block'],
         modes: ['normal', 'circle', 'circle-fill', 'square'],
       },
       {
         name: 'message',
+        alternatives: ['chat'],
         Component: BMessage,
         modes: [
           'normal',
@@ -182,10 +188,12 @@ export const ICONS = [
       {
         name: 'camera',
         Component: BCamera,
+        alternatives: ['capture'],
         modes: ['normal', 'fill', 'off', 'off-fill', 'home', 'home-fill'],
       },
       {
         name: 'video',
+        alternatives: ['record'],
         Component: BVideo,
         modes: [
           'normal',
@@ -200,15 +208,26 @@ export const ICONS = [
       {
         name: 'shopping-bag',
         Component: BShoppingBag,
+        alternatives: ['buy', 'sell'],
         modes: ['normal', 'fill', 'alt', 'bags'],
       },
       {
         name: 'shopping-cart',
         Component: BShoppingCart,
+        alternatives: ['buy', 'sell'],
         modes: ['normal', 'fill', 'alt', 'alt-fill'],
       },
       {
         name: 'chart',
+        alternatives: [
+          'stats',
+          'bar',
+          'pie',
+          'doughnut',
+          'line',
+          'network',
+          'scatter',
+        ],
         Component: BChart,
         modes: [
           'normal',
@@ -228,17 +247,20 @@ export const ICONS = [
         ],
       },
       {
-        name: 'timer',
+        name: 'time',
         Component: BTime,
+        alternatives: ['clock'],
         modes: ['normal', 'fill', 'timer', 'timer-fill'],
       },
       {
         name: 'calendar',
         Component: BCalendar,
+        alternatives: ['event', 'date'],
         modes: ['normal', 'fill', 'alt', 'alt-fill', 'event', 'event-fill'],
       },
       {
         name: 'emoji',
+        alternatives: ['smile', 'wink', 'sad', 'meh'],
         Component: BEmoji,
         modes: [
           'smile',
@@ -254,10 +276,12 @@ export const ICONS = [
       {
         name: 'bell',
         Component: BBell,
+        alternatives: ['alert', 'notification'],
         modes: ['normal', 'fill', 'off', 'off-fill', 'ring'],
       },
       {
         name: 'bookmark',
+        alternatives: ['save', 'star'],
         Component: BBookmark,
         modes: [
           'normal',
@@ -271,22 +295,8 @@ export const ICONS = [
       {
         name: 'file',
         Component: BFile,
+        alternatives: ['document', 'pdf', 'archive', 'import', 'png'],
         modes: ['normal', 'fill', 'blank', 'pdf', 'png', 'archive', 'import'],
-      },
-      {
-        name: 'lock',
-        Component: BLock,
-        modes: [
-          'normal',
-          'fill',
-          'alt',
-          'alt-fill',
-          'open',
-          'open-fill',
-          'open-alt',
-          'open-alt-fill',
-          'block',
-        ],
       },
       {
         name: 'share',
@@ -310,6 +320,7 @@ export const ICONS = [
       },
       {
         name: 'map',
+        alternatives: ['location', 'coordinate'],
         Component: BMap,
         modes: [
           'normal',
@@ -324,6 +335,7 @@ export const ICONS = [
       {
         name: 'trash',
         Component: BTrash,
+        alternatives: ['delete', 'remove'],
         modes: ['normal', 'fill', 'alt', 'alt-fill'],
       },
       {
@@ -334,10 +346,12 @@ export const ICONS = [
       {
         name: 'thumb',
         Component: BThumb,
+        alternatives: ['like', 'dislike'],
         modes: ['up', 'up-fill', 'down', 'down-fill'],
       },
       {
         name: 'heart',
+        alternatives: ['like', 'donate'],
         Component: BHeart,
         modes: [
           'normal',
@@ -351,6 +365,7 @@ export const ICONS = [
       {
         name: 'store',
         Component: BStore,
+        alternatives: ['shopping', 'market'],
         modes: ['normal', 'fill', 'alt', 'alt-fill'],
       },
       {
@@ -361,20 +376,36 @@ export const ICONS = [
       {
         name: 'error',
         Component: BError,
+        alternatives: ['warning', 'danger'],
         modes: ['normal', 'fill', 'alt', 'alt-fill', 'circle', 'circle-fill'],
       },
       {
         name: 'plus',
         Component: BPlus,
+        alternatives: ['add', 'increase'],
         modes: ['normal', 'fill', 'circle', 'circle-fill'],
       },
       {
         name: 'minus',
         Component: BMinus,
+        alternatives: ['decrease'],
         modes: ['normal', 'fill', 'circle', 'circle-fill'],
       },
       {
         name: 'social-media',
+        alternatives: [
+          'youtube',
+          'facebook',
+          'instagram',
+          'linkedin',
+          'whatsapp',
+          'twitter',
+          'telegram',
+          'tiktok',
+          'discord',
+          'reddit',
+          'twitch',
+        ],
         Component: BSocialMedia,
         modes: [
           'youtube',
@@ -396,11 +427,13 @@ export const ICONS = [
       {
         name: 'link',
         Component: BLink,
+        alternatives: ['web'],
         modes: ['normal', 'unlink', 'alt', 'external'],
       },
       {
         name: 'platform',
         Component: BPlatform,
+        alternatives: ['android', 'ios', 'windows'],
         modes: ['android', 'apple', 'windows'],
       },
     ],
@@ -434,29 +467,35 @@ export const ICONS = [
       {
         name: 'home',
         Component: FeHome,
+        alternatives: ['house'],
       },
       {
         name: 'search',
         Component: FeSearch,
+        alternatives: ['find'],
       },
       {
         name: 'user',
         Component: FeUser,
         modes: ['normal', 'plus', 'minus', 'x', 'check', 'users'],
+        alternatives: ['person'],
       },
       {
         name: 'image',
         Component: FeImage,
+        alternatives: ['picture'],
       },
       {
         name: 'x',
         Component: FeX,
         modes: ['normal', 'circle', 'square', 'octagon'],
+        alternatives: ['close', 'block'],
       },
       {
         name: 'message',
         Component: FeMessage,
         modes: ['circle', 'square'],
+        alternatives: ['chat'],
       },
       {
         name: 'send',
@@ -466,53 +505,72 @@ export const ICONS = [
         name: 'camera',
         Component: FeCamera,
         modes: ['normal', 'off'],
+        alternatives: ['capture'],
       },
       {
         name: 'video',
         Component: FeVideo,
         modes: ['normal', 'off', 'film'],
+        alternatives: ['record', 'film'],
       },
       {
         name: 'shopping-bag',
         Component: FeShoppingBag,
+        alternatives: ['buy', 'sell'],
       },
       {
         name: 'shopping-cart',
         Component: FeShoppingCart,
+        alternatives: ['buy', 'sell'],
       },
       {
         name: 'chart',
         Component: FeChart,
         modes: ['normal', 'alt', 'pie'],
+        alternatives: [
+          'stats',
+          'bar',
+          'pie',
+          'doughnut',
+          'line',
+          'network',
+          'scatter',
+        ],
       },
       {
         name: 'time',
         Component: FeTime,
         modes: ['normal', 'watch', 'sunrise', 'sunset'],
+        alternatives: ['clock'],
       },
       {
         name: 'calendar',
         Component: FeCalendar,
+        alternatives: ['event', 'date'],
       },
       {
         name: 'emoji',
         Component: FeEmoji,
         modes: ['smile', 'sad', 'meh'],
+        alternatives: ['smile', 'wink', 'sad', 'meh'],
       },
       {
         name: 'bell',
         Component: FeBell,
         modes: ['normal', 'off'],
+        alternatives: ['alert', 'notification'],
       },
       {
         name: 'bookmark',
         Component: FeBookmark,
         modes: ['normal', 'star'],
+        alternatives: ['save', 'star'],
       },
       {
         name: 'file',
         Component: FeFile,
         modes: ['normal', 'text'],
+        alternatives: ['document', 'text'],
       },
       {
         name: 'lock',
@@ -528,11 +586,13 @@ export const ICONS = [
         name: 'map',
         Component: FeMap,
         modes: ['normal', 'pin', 'navigation'],
+        alternatives: ['location', 'coordinate', 'navigation'],
       },
       {
         name: 'trash',
         Component: FeTrash,
         modes: ['normal', 'fill'],
+        alternatives: ['delete', 'remove'],
       },
       {
         name: 'grid',
@@ -542,10 +602,12 @@ export const ICONS = [
         name: 'thumb',
         Component: FeThumb,
         modes: ['up', 'down'],
+        alternatives: ['like', 'dislike'],
       },
       {
         name: 'heart',
         Component: FeHeart,
+        alternatives: ['like'],
       },
       {
         name: 'archive',
@@ -555,21 +617,25 @@ export const ICONS = [
         name: 'error',
         Component: FeError,
         modes: ['circle', 'tirangle', 'octagon'],
+        alternatives: ['warning', 'danger'],
       },
       {
         name: 'plus',
         Component: FePlus,
         modes: ['normal', 'circle', 'square'],
+        alternatives: ['add', 'increase'],
       },
       {
         name: 'minus',
         Component: FeMinus,
         modes: ['normal', 'circle', 'square'],
+        alternatives: ['decrease'],
       },
       {
         name: 'link',
         Component: FeLink,
         modes: ['normal', 'alt', 'external'],
+        alternatives: ['web'],
       },
     ],
   },
