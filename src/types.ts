@@ -34,6 +34,7 @@ export type IconNameType =
   | 'social-media'
   | 'link'
   | 'platform'
+  | 'mail'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'

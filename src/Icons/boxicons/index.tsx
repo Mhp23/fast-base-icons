@@ -5,6 +5,7 @@ export {default as BChevronRight} from './BChevronRight';
 
 export {default as BX} from './BX';
 export {default as BMap} from './BMap';
+export {default as BMail} from './BMail';
 export {default as BLink} from './BLink';
 export {default as BLock} from './BLock';
 export {default as BGrid} from './BGrid';
