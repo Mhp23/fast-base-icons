@@ -35,6 +35,8 @@ export type IconNameType =
   | 'link'
   | 'platform'
   | 'mail'
+  | 'menu'
+  | 'dots'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'

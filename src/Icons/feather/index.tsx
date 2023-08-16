@@ -5,6 +5,8 @@ export {default as FeChevronRight} from './FeChevronRight';
 
 export {default as FeX} from './FeX';
 export {default as FeMap} from './FeMap';
+export {default as FeMenu} from './FeMenu';
+export {default as FeDots} from './FeDots';
 export {default as FeMail} from './FeMail';
 export {default as FeLink} from './FeLink';
 export {default as FeGrid} from './FeGrid';
