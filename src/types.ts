@@ -37,6 +37,7 @@ export type IconNameType =
   | 'mail'
   | 'menu'
   | 'dots'
+  | 'cog'
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-up'

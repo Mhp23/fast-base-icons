@@ -4,6 +4,7 @@ export {default as BChevronLeft} from './BChevronLeft';
 export {default as BChevronRight} from './BChevronRight';
 
 export {default as BX} from './BX';
+export {default as BCog} from './BCog';
 export {default as BMap} from './BMap';
 export {default as BDots} from './BDots';
 export {default as BMenu} from './BMenu';
