@@ -17,6 +17,7 @@ import {
 } from 'react-native';
 import {ICONS} from './Icons';
 import {useRM} from 'react-native-full-responsive';
+import ModalContent, {type IconContentType} from './ContentModal';
 
 const ICON_SIZE = 22.5;
 
@@ -24,6 +25,10 @@ const IconsList: React.FC = () => {
   const {colors} = useTheme();
 
   const {rs} = useRM();
+
+  const [modalContent, setModalContent] = React.useState<
+    IconContentType | undefined
+  >(undefined);
 
   const sectionStyle = useStyle(() => {
     return {
@@ -80,8 +85,16 @@ const IconsList: React.FC = () => {
     [],
   );
 
+  const onIconPress = React.useCallback(
+    (mode: string, displayName?: string) => {
+      setModalContent({mode, displayName} as any);
+    },
+    [],
+  );
+
   return (
     <Container py={10}>
+      <ModalContent content={modalContent} setContent={setModalContent} />
       <Text size="2xl" ax="center" weight="bold">
         Fast Base Icons{' '}
         <Text size="sm" color={colors?.secondText}>
@@ -110,16 +123,13 @@ const IconsList: React.FC = () => {
               <Wrapper mt={10} mb={20} style={sectionStyle} mode="row">
                 {icons.map(({name, modes, Component}, index) => {
                   const key = `${pack}-${name}-${index}`;
-                  const onPress = () => {
-                    //To Do: implementing show & copy code of Icon
-                  };
                   return !Array.isArray(modes) ? (
                     <Button
                       key={key}
                       opacity
                       pressable
-                      onPress={onPress}
-                      style={style.iconButton}>
+                      style={style.iconButton}
+                      onPress={() => onIconPress('', Component?.displayName)}>
                       <Component size={ICON_SIZE} color={colors?.secondText} />
                     </Button>
                   ) : (
@@ -128,9 +138,11 @@ const IconsList: React.FC = () => {
                         <Button
                           opacity
                           pressable
-                          onPress={onPress}
                           key={`${key}-${i}`}
-                          style={style.iconButton}>
+                          style={style.iconButton}
+                          onPress={() =>
+                            onIconPress(mode, Component?.displayName)
+                          }>
                           <Component
                             size={ICON_SIZE}
                             mode={mode as any}
