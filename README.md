@@ -29,6 +29,12 @@ Fast base icons help you incorporate a wide range of modern and stylish icons fr
 
 ### <a href="">Explore the icons list</a> to become familiar with the available icons and easily copy them into your project
 
+<br />
+
+<p align="center">
+  <img src="./assets/website.jpg" alt="fast base icons" />
+</p>
+
 ## 💫 Features
 
 - <strong>Cross-platform</strong>

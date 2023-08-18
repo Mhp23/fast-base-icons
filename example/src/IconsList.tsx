@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {
+  Gap,
   Text,
   Input,
   Button,
@@ -13,6 +14,7 @@ import {
   StyleSheet,
   type NativeSyntheticEvent,
   type TextInputChangeEventData,
+  Linking,
   Platform,
 } from 'react-native';
 import {ICONS} from './Icons';
@@ -21,6 +23,9 @@ import ContentModal, {type IconContentType} from './ContentModal';
 import ExpoStatusBar from 'expo-status-bar/build/ExpoStatusBar';
 
 const ICON_SIZE = 22.5;
+const URL = 'https://mhpdev.com/en';
+const REPO_URL = 'https://github.com/Mhp23/fast-base-icons';
+const REPO_NATIVE_URL = 'https://github.com/Mhp23/react-native-fast-base';
 
 const IconsList: React.FC = () => {
   const {colors, mode} = useTheme();
@@ -103,22 +108,51 @@ const IconsList: React.FC = () => {
     [colors?.text],
   );
 
+  const onLinkPress = React.useCallback(async link => {
+    try {
+      const isOpenable = await Linking.canOpenURL(link);
+
+      if (isOpenable) {
+        await Linking.openURL(link);
+      }
+    } catch (e) {
+      console.warn(e);
+    }
+  }, []);
+
   return (
-    <Container py={10}>
+    <Container pt={20}>
       <ExpoStatusBar
         backgroundColor={colors?.background}
         style={mode !== 'dark' ? 'dark' : 'light'}
       />
       <ContentModal content={content} setContent={setContent} />
-      <Text size="2xl" ax="center" weight="bold">
-        Fast Base Icons{' '}
-        <Text size="sm" color={colors?.secondText}>
-          ({iconsCount})
+      <Gap behavior="style" space="xs">
+        <Text size="2xl" ax="center" weight="bold">
+          Fast Base Icons{' '}
+          <Text size="sm" color={colors?.secondText}>
+            ({iconsCount})
+          </Text>
         </Text>
-      </Text>
-      <Text color={colors?.secondText} size="sm" ax="center">
-        @fast-base/icons
-      </Text>
+        <Text color={colors?.secondText} size="sm" ax="center">
+          @fast-base/icons
+        </Text>
+        <Wrapper ay="center" mode="row">
+          <Button
+            size="sm"
+            title="Repository"
+            mode="transparent"
+            onPress={() => onLinkPress(REPO_URL)}
+          />
+          <Button
+            size="sm"
+            mode="transparent"
+            title="Fast Base UI Kit"
+            color={colors?.secondary}
+            onPress={() => onLinkPress(REPO_NATIVE_URL)}
+          />
+        </Wrapper>
+      </Gap>
       <Wrapper px={10} mb={20}>
         <Input.Underline
           size="lg"
@@ -185,6 +219,18 @@ const IconsList: React.FC = () => {
           );
         })}
       </ScrollView>
+      <Wrapper py={15} ax="center" background={colors?.surface}>
+        <Text size="sm">
+          Made with ❤️ by{' '}
+          <Text
+            size="sm"
+            weight="bold"
+            color={colors?.success}
+            onPress={() => onLinkPress(URL)}>
+            MHPDEV
+          </Text>
+        </Text>
+      </Wrapper>
     </Container>
   );
 };
