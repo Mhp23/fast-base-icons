@@ -1,7 +1,7 @@
 {
   "name": "@fast-base/icons",
   "version": "0.1.0",
-  "description": "A library to use SVG icons in React Native",
+  "description": "Customizable, Modern and Category Based Svg Icons For React Native & Expo",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
