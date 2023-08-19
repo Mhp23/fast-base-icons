@@ -1,0 +1,9 @@
+{
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "lang": "en",
+  "name": "fast-base-icons",
+  "short_name": "fast-base-icons",
+  "start_url": "/?utm_source=web_app_manifest",
+  "orientation": "portrait"
+}
