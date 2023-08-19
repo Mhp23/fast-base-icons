@@ -27,7 +27,7 @@
 
 Fast base icons help you incorporate a wide range of modern and stylish icons from [BoxIcons](https://github.com/atisawd/boxicons) and [Feather](https://github.com/feathericons/feather), all based on SVG, into your app. If you are interested in using a responsive, customizable, and feature-rich UI kit, I highly recommend checking out [react-native-fast-base](https://github.com/Mhp23/react-native-fast-base).
 
-### <a href="">Explore the icons list</a> to become familiar with the available icons and easily copy them into your project
+### <a href="http://mhp23.github.io/fast-base-icons">Explore the icons list</a> to become familiar with the available icons and easily copy them into your project
 
 <br />
 
