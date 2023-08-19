@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/fast-base-icons/static/js/main.4a0ae562.js",
+    "static/js/987.0593d588.js": "/fast-base-icons/static/js/987.0593d588.js",
+    "favicon.ico": "/fast-base-icons/favicon.ico",
+    "index.html": "/fast-base-icons/index.html",
+    "favicon-32.png": "/fast-base-icons/favicon-32.png",
+    "favicon-16.png": "/fast-base-icons/favicon-16.png",
+    "manifest.json": "/fast-base-icons/manifest.json",
+    "serve.json": "/fast-base-icons/serve.json",
+    "main.4a0ae562.js.map": "/fast-base-icons/static/js/main.4a0ae562.js.map",
+    "987.0593d588.js.map": "/fast-base-icons/static/js/987.0593d588.js.map"
+  },
+  "entrypoints": [
+    "static/js/987.0593d588.js",
+    "static/js/main.4a0ae562.js"
+  ]
+}
