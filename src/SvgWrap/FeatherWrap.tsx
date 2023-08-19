@@ -1,10 +1,11 @@
 import React from 'react';
 import RootWrap from './RootWrap';
 import type {SvgIconProps} from '../types';
+import {DEFAULT_COLOR} from '../constants';
 import {type SvgProps} from 'react-native-svg';
 
 const FeatherWrap = React.forwardRef<any, SvgProps & SvgIconProps>(
-  ({children, color, ...rest}, ref) => {
+  ({children, color = DEFAULT_COLOR, ...rest}, ref) => {
     return (
       <RootWrap
         ref={ref}
