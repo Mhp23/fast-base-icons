@@ -1,6 +1,6 @@
 {
   "name": "@fast-base/icons",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Customizable, Modern and Category Based Svg Icons For React Native & Expo",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -59,6 +59,7 @@
   },
   "homepage": "https://github.com/Mhp23/fast-base-icons#readme",
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
